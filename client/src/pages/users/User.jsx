@@ -31,7 +31,7 @@ export function User() {
 		<div>
 		  {Object.entries(obj).map(([key, value]) => (
 			<div key={key}>
-			  <strong>{key}:</strong>{" "}
+			  <strong>{key.toUpperCase()}:</strong>{" "}
 			  {typeof value === "object" ? (
 				renderNestedObjects(value)
 			  ) : (
