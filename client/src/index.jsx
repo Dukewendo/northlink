@@ -12,7 +12,7 @@ const router = (
       <Route exact path="/users" component={Users} />
       <Route exact path="/" component={Home} />
       <Route path="/users/:id" component={User} />
-      <Route path="/blogs" component={Blogs} />
+      <Route path="/blogs/:id" component={Blogs} />
     </Switch>
   </Router>
 );
